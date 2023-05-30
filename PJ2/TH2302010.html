@@ -9,14 +9,19 @@
 </head>
 <body ng-app="myApp">
     <div ng-controller="myController">
-        <input type="text" ng-model="textSearch" placeholder="Enter text to search">
-        <input type="text" ng-model="categoriesSearch" placeholder="Search by categories">
-        <div class="container" ng-repeat="item in courses | filter | filter: textSearch">
-            <div class="items">
-                <img alt={{item.name}}>
-                {{item.name}}<br>
-                {{item.author}}<br>
-                {{item.about}}<br>
+        <div class="search">
+            <input type="text" ng-model="textSearch" placeholder="Enter text to search">
+            <input type="text" ng-model="categoriesSearch" placeholder="Search by categories">
+        </div>
+        <div class="container">
+            <div class="items" ng-repeat="item in courses | filter: textSearch">
+                <img src={{item.logo}} alt={{item.name}}>
+                <h4>{{item.name}}</h4>
+                {{item.author}}<br><br>
+                {{item.about}}<br><br>
+                <div id="button">
+                    <button>READMORE</button>
+                </div>
             </div>
         </div>
     </div>

@@ -1,11 +1,43 @@
+.search {
+    text-align: center;
+}
+
 .items {
     border: 1px solid;
     width: 180px;
-    margin: 0;
+    margin: 0 10px 0 10px;
+    padding: 10px;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 80px auto 0 auto;
+}
+
+.container div {
     display: inline-block;
+    height: 450px;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    text-align: center;
+    width: 40%;
+    height: 30px;
+    border-radius: 3px;
+}
+
+#button {
+    text-align: right;
+}
+
+button {
+    background: none;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin: 0 10px 10px 0;
 }
