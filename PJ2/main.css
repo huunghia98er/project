@@ -1,0 +1,11 @@
+.items {
+    border: 1px solid;
+    width: 180px;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: inline-block;
+}
